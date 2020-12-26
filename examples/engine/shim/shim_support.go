@@ -16,7 +16,7 @@ var (
 )
 
 func init() {
-	log.SetLogLevel(log.RootLogger(), log.ErrorLevel)
+	log.SetLogLevel(log.RootLogger(), log.DebugLevel)
 
 	cfg, err := engine.LoadAppConfig(cfgJson, cfgCompressed)
 	if err != nil {
